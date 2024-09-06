@@ -1,14 +1,13 @@
 import React from 'react';
+import { motion } from "framer-motion"
 import './App.css';
 
 function App() {
-    return (
-        <div className="bg-tan-100 min-h-screen">
-            <h1 className="text-3xl font-bold underline">
-                Miguelito!
-            </h1>
-        </div>
-    );
+    return <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+        />;
 }
 
 export default App;
