@@ -31,10 +31,10 @@ export function InviteSection() {
                     transition={{duration: 0.6, delay: 0.2}}
                 >
                     <CardHeader className="flex flex-col items-center text-center">
-                        <CardTitle className="font-insideout text-4xl text-custom-brown dark:text-custom-cream">
+                        <CardTitle className="font-insideout text-5xl text-custom-brown dark:text-custom-cream">
                             🧸 Miguelito's Baby Shower 🍼
                         </CardTitle>
-                        <CardDescription className="font-ramen mt-2 text-custom-blue dark:text-custom-purple">“Los hijos son una herencia
+                        <CardDescription className="font-ramen mt-2 text-xl text-custom-blue dark:text-custom-purple">“Los hijos son una herencia
                             de
                             parte de Jehová.”
                             <a href="https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/salmos/127/#v19127003"
