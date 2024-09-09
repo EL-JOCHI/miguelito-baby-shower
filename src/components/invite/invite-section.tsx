@@ -26,13 +26,13 @@ export function InviteSection() {
         >
             <Card className="max-w-2xl mx-auto">
                 <motion.div
-                    initial={{opacity: 0, scale: 0.9}}
+                    initial={{opacity: 0, scale: 0.5}}
                     animate={{opacity: 1, scale: 1}}
                     transition={{duration: 0.6, delay: 0.2}}
                 >
                     <CardHeader className="flex flex-col items-center text-center">
                         <CardTitle className="font-insideout text-5xl text-custom-brown dark:text-custom-cream">
-                            🧸 Miguelito's Baby Shower 🍼
+                            🧸 Miguelito Baby Shower 🍼
                         </CardTitle>
                         <CardDescription className="font-ramen mt-2 text-xl text-custom-blue dark:text-custom-purple">“Los hijos son una herencia
                             de
@@ -49,7 +49,7 @@ export function InviteSection() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="font-insideout-regular text-custom-brown dark:text-custom-cream text-xl text-center"
                     >
-                        Mi papis, Mike y Angie 💖, te invitan a celebrar mi pronta llegada 👶
+                        Mi papis, Mike y Angie 💖, te invitan a mi baby shower 👶
                     </motion.p>
                     <SvgImageAnimator images={svgImages} />
                 </CardContent>

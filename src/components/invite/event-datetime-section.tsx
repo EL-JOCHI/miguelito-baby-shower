@@ -18,8 +18,8 @@ export default function EventDatetimeSection() {
             animate="visible"
             variants={dateVariants}
         >
-            <motion.h2 className="font-insideout text-6xl font-bold text-custom-blue" variants={timeVariants} animate="pulse">
-                🗓️ 28 de Septiembre
+            <motion.h2 className="font-insideout-regular text-6xl font-bold text-custom-blue" variants={timeVariants} animate="pulse">
+                🗓️ Sábado, 28 de Septiembre
             </motion.h2>
             <motion.div variants={timeVariants} animate="pulse">
                 <span className="font-insideout-regular text-4xl font-semibold text-custom-blue">⏰ 15:30</span>

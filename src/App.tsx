@@ -7,6 +7,8 @@ import {InviteSection} from "@/components/invite/invite-section.tsx";
 import EventDatetimeSection from "@/components/invite/event-datetime-section.tsx";
 import CountDownSection from "@/components/invite/countdown-section.tsx";
 import LocationSection from "@/components/invite/location-section.tsx";
+import ConfirmationSection from "@/components/invite/confirmation-section.tsx";
+import GiftSection from "./components/invite/gift-section";
 
 
 function App() {
@@ -52,6 +54,26 @@ function App() {
                                     transition={{duration: 0.5}}
                         >
                            <LocationSection link="https://maps.app.goo.gl/859FodPuKHLBmGtd9" />
+                        </motion.div>
+                        <motion.div
+                            initial={{opacity: 0, y: 20}}
+                            animate={{opacity: 1, y: 0}}
+                            exit={{opacity: 0, y: -20}}
+                            transition={{duration: 0.5}}
+                        >
+                            <ConfirmationSection
+                                phoneNumber="+59176632451"
+                                message="¡Hola! Me gustaría confirmar mi asistencia al baby shower de Miguelito."
+                            />
+                        </motion.div>
+                        <motion.div
+                            initial={{opacity: 0, y: 20}}
+                            animate={{opacity: 1, y: 0}}
+                            exit={{opacity: 0, y: -20}}
+                            transition={{duration: 0.5}}
+                        >
+                            <GiftSection phoneNumber="+59176632451"
+                                         message="¡Hola! Me gustaría hacerle llegar un presente a Miguelito."/>
                         </motion.div>
                     </AnimatePresence>
                 </main>
