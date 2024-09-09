@@ -47,7 +47,7 @@ export function InviteSection() {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
-                        className="font-insideout-regular text-xl text-center"
+                        className="font-insideout-regular text-custom-brown dark:text-custom-cream text-xl text-center"
                     >
                         Mi papis, Mike y Angie 💖, te invitan a celebrar mi pronta llegada 👶
                     </motion.p>
