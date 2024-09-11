@@ -14,7 +14,7 @@ import GiftSection from "./components/invite/gift-section";
 function App() {
 
     return (
-        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
             <div className="flex flex-col items-center min-h-screen">
                 <div className="fixed top-4 right-4 z-50">
                     <ModeToggle/>
@@ -29,9 +29,6 @@ function App() {
                         >
                             <InviteSection/>
                         </motion.div>
-
-                        {/* Add more components here, each wrapped in motion.div */}
-                        {/* Example: */}
                         <motion.div
                             initial={{opacity: 0, y: 20}}
                             animate={{opacity: 1, y: 0}}
