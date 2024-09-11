@@ -18,11 +18,11 @@ export default function CountDownSection({ countDownDate }: CountDownSectionProp
         const timeDifference = countDownTime - currentTime;
 
         // Ensure values are always strings and add leading zeros if needed
-        let days =
+        const days =
             Math.floor(timeDifference / (24 * 60 * 60 * 1000)) >= 10
                 ? Math.floor(timeDifference / (24 * 60 * 60 * 1000)).toString()
                 : `0${Math.floor(timeDifference / (24 * 60 * 60 * 1000))}`;
-        let hours =
+        const hours =
             Math.floor((timeDifference % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)) >=
             10
                 ? Math.floor(
@@ -31,11 +31,11 @@ export default function CountDownSection({ countDownDate }: CountDownSectionProp
                 : `0${Math.floor(
                     (timeDifference % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
                 )}`;
-        let minutes =
+        const minutes =
             Math.floor((timeDifference % (60 * 60 * 1000)) / (1000 * 60)) >= 10
                 ? Math.floor((timeDifference % (60 * 60 * 1000)) / (1000 * 60)).toString()
                 : `0${Math.floor((timeDifference % (60 * 60 * 1000)) / (1000 * 60))}`;
-        let seconds =
+        const seconds =
             Math.floor((timeDifference % (60 * 1000)) / 1000) >= 10
                 ? Math.floor((timeDifference % (60 * 1000)) / 1000).toString()
                 : `0${Math.floor((timeDifference % (60 * 1000)) / 1000)}`;
@@ -83,6 +83,20 @@ export default function CountDownSection({ countDownDate }: CountDownSectionProp
 
     return (
         <div className="font-insideout">
+            <motion.h2
+                className="text-4xl text-center text-custom-brown dark:text-custom-cream"
+                animate={{
+                    rotate: [0, -5, 5, -5, 5, 0],
+                    x: [0, -3, 3, -3, 3, 0]
+                }}
+                transition={{
+                    duration: 1.5,
+                    ease: "easeInOut",
+                    repeat: Infinity, // Loop animation
+                }}
+            >
+                Ya sólo falta...
+            </motion.h2>
             <div className="flex justify-center gap-3 sm:gap-8">
                 <motion.div className="flex flex-col gap-5 relative" variants={numberVariants}
                             initial="hidden"

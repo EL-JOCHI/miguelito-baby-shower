@@ -31,8 +31,8 @@ export default function ConfirmationSection(
                     href={whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out
-          dark:bg-green-600 dark:hover:bg-green-700"
+                    className="bg-green-500 hover:bg-green-400 text-white py-3 px-6 rounded-lg transition duration-300 ease-in-out
+          dark:bg-custom-green dark:hover:bg-green-500"
                 >
                     <span className="mr-2">📲</span> Confirmar por WhatsApp
                 </a>
